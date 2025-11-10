@@ -14,10 +14,10 @@ api_addr: "0.0.0.0:8000"
 # behind a reverse proxy (like nginx) and you want a subdomain.
 # You could set it to: `https://my.domain.com` and then the files
 # would be served at `https://my.domain.com/<hash>`
-cdn_url: "http://blossom.happytavern.co"
+cdn_url: "http://0.0.0.0:8000"
 
 # Admin pubkey
-admin_pubkey: "7c24e7963f87beda2a9ccaab9ef1f73cbf3fb4db96f3c1064f539e0d230b67ac"
+admin_pubkey: "509f37d850fa007227688f2d897e8e8efb6af9a4b2bd636bbd74349f9f2c6d89"
 
 # Limit the size of files that can be uploaded, specified in bytes.
 # Default value of 2MB
@@ -45,7 +45,7 @@ max_storage_per_pubkey_bytes: 10737418240
 # - '<specific-pubkey>': rule applies to only one pubkey
 access_control_rules:
   - action: "ALLOW"
-    pubkey: "7c24e7963f87beda2a9ccaab9ef1f73cbf3fb4db96f3c1064f539e0d230b67ac"
+    pubkey: "509f37d850fa007227688f2d897e8e8efb6af9a4b2bd636bbd74349f9f2c6d89"
     resource: "UPLOAD"
   - action: "ALLOW"
     pubkey: "ALL"
